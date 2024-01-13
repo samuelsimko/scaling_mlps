@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: scaling-mlps
+Version: 0.1
+Summary: Repository for the paper Scaling MLPs: A Tale of Inductive Bias
+Home-page: https://github.com/samuelsimko/scaling_mlps
+Author: Gregor Bachmann
+Author-email: idk
+License: idk
