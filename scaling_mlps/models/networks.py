@@ -101,10 +101,16 @@ class BottleneckMLP(nn.Module):
         with open(config_path, 'r') as f:
             self.config = json.load(f)
 
-        params = {
-            k: v
-            for k, v in torch.load(weight_path).items()
-        }
+        try:
+            params = {
+                k: v
+                for k, v in torch.load(weight_path).items()
+            }
+        except RuntimeError:
+            params = {
+                k: v
+                for k, v in torch.load(weight_path , map_location=torch.device('cpu')).items()
+            }
 
         # Load pre-trained parameters
         print('Load_state output', self.load_state_dict(params, strict=False))
