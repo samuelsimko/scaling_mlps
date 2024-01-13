@@ -1,8 +1,0 @@
-README.md
-setup.py
-scaling_mlps/__init__.py
-scaling_mlps.egg-info/PKG-INFO
-scaling_mlps.egg-info/SOURCES.txt
-scaling_mlps.egg-info/dependency_links.txt
-scaling_mlps.egg-info/not-zip-safe
-scaling_mlps.egg-info/top_level.txt
